@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en, ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Quwewe's website</title>
+    <link rel="shortcut icon" href="files/logotop.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loadingScreen"> 
+        <img id="logoim" src="files/logo.png"  alt="Quwewe"> 
+        <div id="logoText"> <img id="hand" src="files/hand.png"> Hello!  </div>
+        <div class="loader"></div>
+    </div>
+
+    <div id="mainContent">
+        <div class="topnav">
+            <div class="menu">
+            <a  href="https://youtu.be/IumYMCllMsM?si=BCV-dmI-rHunfjvb&t=12">Home</a>
+            <a  href="https://t.me/cryptoquwe/5">My chanel</a>
+        </div>
+        <div id="QlogoText"><img id="Qlogo" src="files/logo0.png"> QUWEWE</div>
+        <div class="icons">
+            <a href="http://t.me/quwewe" ><img id="TgLogo"  src="files/TgLogo.png" ></a>
+            <a href="https://github.com/ElOneJazzz" ><img id="GitHubLogo" src="files/GitHubLogo.png"></a>
+        </div>  
+        </div>
+        <div id="container">
+        <img id="MeIm" title="It's me" src="files/me.jpg"  alt="None"> 
+        <div id="textContainer">
+        <div id="AboutMe">ABOUT ME</div>
+        <div id="HiText">  Hello! My name is Kurasov Ilya, and I'm 19 years old. I'm currently studying programming at KubSAU.🧑🏻‍💻<br>
+            I'm passionate about learning new technologies and improving my coding skills.😍<br>
+            My goal is to become a proficient software developer and contribute to exciting projects in the tech industry.🔥</div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+  <script> 
+        function showMainContent() {
+            document.getElementById('loadingScreen').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block'; 
+        }
+        setTimeout(showMainContent, 0);  /* 2500 */ 
+    </script> 
+</body>
