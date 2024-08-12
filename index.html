@@ -29,12 +29,14 @@
         </div>  
         </div>
         <div id="container">
+        <div id="imageTextWrapper">
         <img id="MeIm" title="It's me" src="files/me.jpg"  alt="None"> 
         <div id="textContainer">
         <div id="AboutMe">ABOUT ME</div>
-        <div id="HiText">  Hello! My name is Kurasov Ilya, and I'm 19 years old. I'm currently studying programming at KubSAU.🧑🏻‍💻<br>
-            I'm passionate about learning new technologies and improving my coding skills.😍<br>
+        <div id="HiText">  Hello! My name is Kurasov Ilya, and I'm 19 years old. I'm currently studying programming at KubSAU.🧑🏻‍💻
+            I'm passionate about learning new technologies and improving my coding skills.😍
             My goal is to become a proficient software developer and contribute to exciting projects in the tech industry.🔥</div>
+        </div>
         </div>
         </div>
         </div>
@@ -44,6 +46,7 @@
         function showMainContent() {
             document.getElementById('loadingScreen').style.display = 'none';
             document.getElementById('mainContent').style.display = 'block'; 
+              document.querySelector('.topnav').style.display = 'flex';
         }
         setTimeout(showMainContent, 2500);  /* 2500 */ 
     </script> 
